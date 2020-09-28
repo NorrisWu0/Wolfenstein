@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*------------------------------Content section------------------------------*/
+
+#covers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 20px auto;
+}
+
+#covers img {
+  display: block;
+  max-width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+/*------------------------------Timeline testing------------------------------*/
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  padding: 30px 30px 30px;
+  position: relative;
+  color: rgba(200, 200, 200, 1);
+  border-left: 2px solid rgba(200, 200, 200, 1);
+}
+
+.timeline-item::before {
+  content: attr(date-is);
+  position: absolute;
+  font-weight: bold;
+  top: 1em;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.timeline-item::after {
+  width: 10px;
+  height: 10px;
+  display: block;
+  top: 1em;
+  position: absolute;
+  left: -7px;
+  border-radius: 20px;
+  content: "";
+  border: 2px solid rgba(200, 200, 200, 1);
+  background: rgba(17, 17, 17, 1);
+}
+.timeline-item:last-child {
+  border-image: linear-gradient(
+      to bottom,
+      rgba(200, 200, 200, 1) 60%,
+      transparent
+    )
+    1 100%;
+}

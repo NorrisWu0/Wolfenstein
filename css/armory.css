@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+.diff {
+	background-color: rgba(26,26,26,1.00);
+}
+
+
+.weapone {
+	width: 400px;
+	height: 600px;
+	float: left;
+}
+
+.weapone img {
+	width: 320px;
+	padding: 0 40px;
+}
+
+.weapone h2, p {
+	padding: 10px 40px 0;
+}

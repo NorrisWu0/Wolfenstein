@@ -1,0 +1,174 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto");
+/* CSS Document */
+
+/*------------------------------Basic framework------------------------------*/
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: auto;
+  height: 100%;
+
+  background-image: url(https://img00.deviantart.net/2526/i/2010/166/c/8/wolfenstein_wallpaper_by_datis.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0 10vw;
+  width: inherit;
+  height: 60px;
+  background: rgba(193, 32, 38, 1);
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  text-align: center;
+}
+
+.brand {
+  align-self: center;
+  height: 45px;
+}
+
+.brand img {
+  height: inherit;
+}
+
+.menu {
+  margin-left: auto;
+  height: inherit;
+  font-size: 18px;
+}
+
+.menu ul li {
+  list-style: none;
+  float: left;
+}
+
+.menu a:link,
+a:visited {
+  margin: 0px 15px;
+  padding: 5px 15px;
+  transition: linear 0.15s;
+  border-bottom: solid 2px rgba(180, 180, 180, 1);
+  color: rgba(180, 180, 180, 1);
+  text-decoration: none;
+}
+
+.menu a:hover {
+  padding: 5px 15px;
+  transition: linear 0.15s;
+  border-bottom: solid 2px rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.menu a:active {
+  margin: 0px 15px;
+  padding: 5px 15px;
+  transition: linear 0.15s;
+  border-bottom: solid 2px rgba(220, 220, 220, 1);
+  color: rgba(220, 220, 220, 1);
+  text-decoration: none;
+}
+
+.home-hero-section {
+  margin: 0 10vw;
+  width: 80vw;
+  height: 60vh;
+  background: #080808;
+}
+
+.home-hero-section img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0px auto;
+}
+
+/*------------------------------Things should be different from now------------------------------*/
+
+#content {
+  margin: 0 10vw;
+  width: 80vw;
+  background-color: rgba(17, 17, 17, 1);
+}
+
+#content h2,
+h3 {
+  font-family: "Lato", sans-serif;
+  color: rgba(220, 220, 220, 1);
+}
+
+#content p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(160, 160, 160, 1);
+}
+
+.description {
+  padding: 10px 40px;
+}
+
+/*------------------------------Bottom division------------------------------*/
+
+#bot {
+  height: 30px;
+  background-color: rgba(51, 51, 51, 1);
+
+  color: rgba(180, 180, 180, 1);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+#bot p {
+  margin: 0;
+  padding-top: 7px;
+}
+
+#bot a:link,
+a:active,
+a:visited {
+  color: rgba(220, 220, 220, 1);
+  text-decoration: none;
+}
+
+#bot a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/*------------------------------Animation part of css code------------------------------*/
+
+@keyframes slide-in-left {
+  from {
+    margin-left: -5%;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    margin-right: -5%;
+    opacity: 0;
+  }
+
+  to {
+    margin-right: 0;
+    opacity: 1;
+  }
+}
